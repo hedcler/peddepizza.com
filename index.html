@@ -27,7 +27,7 @@
         let params = new URLSearchParams(document.location.search);
         let source = params.get("source");
         alert(source)
-        gtag('source', source);
+        gtag({'event': 'qrcode-scan', 'conversionValue': source});
         window.location.href = "http://peddepizza.menudino.com";
       }, 1000)
     </script>
