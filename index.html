@@ -23,7 +23,10 @@
     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
     <script>
+      let params = new URLSearchParams(document.location.search);
+      let source = params.get("source");
       setTimeout(function () {
+        gtag('source', source);
         window.location.href = "http://peddepizza.menudino.com";
       }, 1000)
     </script>
